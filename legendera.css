@@ -1,0 +1,107 @@
+body {
+    background-color: #817e7e;
+    color: black;
+    font-style: inherit;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    font-family: cursive;
+}
+
+header{
+    background:blue;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+footer{
+    background:blue;
+    padding: 10px 0;
+    margin: 0;
+    text-align: center;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+header h1, p{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+h2 {
+    text-decoration: underline;
+    font-size: 34px;
+    font-family: fantasy;
+}
+
+h2,h3{
+    margin: 0;
+    padding: 0;
+}
+
+section p{
+font-family:cursive;
+color: navy;
+font-size: 24px;
+font-style: oblique;
+}
+
+nav a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a hover{
+    color: #555;
+    text-decoration: underline;
+    color: red;
+}
+
+main{
+    padding: 20px;
+    text-align: center;
+}
+
+form{
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+}
+
+form button{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+button{
+    background-color: black;
+    color: white;
+    border: 1px solid white;  
+}
+
+form input::placeholder, form textarea::placeholder{
+    color: black;
+}

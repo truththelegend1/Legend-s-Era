@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="legendera.css">
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', () =>{
+            targets: '.jumbotron h1',
+            opacity: [0, 1],
+            translateY: [50, 0],
+            easing: 'easeQutExpo',
+            duration: 3000,
+            delay: 300
+        });
+
+        anime({
+            targets: 'jumbotron p',
+            opacity: [0, 1],
+            translateY: [50, 0],
+            easing: 'easeOutExpo',
+            duration: 1200,
+            delay: 600
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+
+                });
+            });
+        });
+        </script>
+    <header>
+        <h1>Welcome to the Legend's Era</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Here are varieties of iPhone series available now!</h2>
+            <br><p>iPhone XR </p>
+            <img src="xr.jpg" width="1000" height="400">
+            <br><br><p>iPhone 11 Series</p>
+            <img src="11series.jpg" width="1000" height="400">
+            <br><br><p>iPhone 12 Series</p>
+            <img src="12series.jpg" width="1000" height="400">
+            <br><br><p>iPhone 13 Series</p>
+            <img src="13series.jpg" width="1000" height="400">
+            <br><br><p>iPhone 14 Series</p>
+            <img src="14series.jpg" width="1000" height="400">
+        </section>
+    </main>
+<footer>
+    <p>&copy; 2024 Legend Era</p>
+</footer>
+</body>
+</html>
